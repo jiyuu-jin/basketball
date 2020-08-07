@@ -1,71 +1,57 @@
-<!DOCTYPE html>
 <html>
+
 <head>
 
-    <style>
-    
+	<style>
+       .parent {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .child {
+        flex: 1 1 300px;
+        border: 1px solid red;
+        background: lightpink;
+        font-size: 2rem;
+        text-align: center;
+        height: 200px;
+        margin: 10px;
+        background-size: cover;
+        background-position: center; /* Center the image */
+      }
+      
+      .pug1{
+          background-image: url("https://cdn.pixabay.com/photo/2017/07/31/11/05/dog-2557266_960_720.jpg")
+      }
+      
+      .pug2{
+          background-image: url("https://cdn.pixabay.com/photo/2018/03/20/16/16/dog-3243734_960_720.jpg")
+      }
+      
+      .pug3{
+          background-image: url("https://cdn.pixabay.com/photo/2017/05/16/04/17/pug-2316812_960_720.jpg")
+
+      }
+
       body {
-        background-color: black;
+        font-family: system-ui, serif;
+      }
+      
+      #site-title{
+      	text-align: center;
       }
 
-      h1 {
-      	background-color: red;
-        color: black;
-        text-align: center;
-        opacity: 0.5;
-        font-size: 80px;
-        border-style: solid;
-        padding: 25px 25px 25px 25px;
-      }
-
-      p {
-        font-family: verdana;
-        font-size: 40px;
-      }
-      
-      img{
-      	display: block;
-        margin: 0 auto;
-        background-color: white;
-        padding: 25px 25px 25px 25px;
-      }
-      
-      
-      h2{
-      	font-size: 50px;
-        text-align: center;
-        color: white;
-        margin: 80px 0px 40px 0px;
-      }
-      
     </style>
 
 </head>
 
+    <body>
+    	<h1 id="site-title">PUGS AND HUGS!!!!</h1>
+		<div class="parent">
+          <div class="child pug1">1</div>
+          <div class="child pug2">2</div>
+          <div class="child pug3">3</div>
+        </div>
+    </body>
 
-<body>
-
-  <h1>How To Play Basketball 101 !</h1>
-
-    <img src="https://cdn.pixabay.com/photo/2017/04/25/05/44/basketball-2258650_1280.jpg" height="442">
-
-
-
-    <h2>Basketball Basic Needs </h2>
-
-    <img src="https://cdn.pixabay.com/photo/2015/05/15/14/49/basketball-768713_1280.jpg" alt="dab" height="442">
-
-
-
-    <h2> Next Step: PRACTICE </h2>
-
-    <img src="https://cdn.pixabay.com/photo/2015/02/13/22/10/runners-635906_1280.jpg" alt="dab" height="442">
-
-
-
-    <h2> Try Out For A Team! </h2>
-
-    <img src="https://cdn.pixabay.com/photo/2014/12/04/21/46/basketball-557192_1280.jpg" height="442">
-
-</body>
 </html>
